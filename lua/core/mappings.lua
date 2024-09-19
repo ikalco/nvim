@@ -21,7 +21,7 @@ M.defaults = function()
 
 	-- exit terminal
 	vim.keymap.set("t", "<C-x>", "<C-\\><C-n>")
-	vim.keymap.set("c", "W", "noa w")
+	-- vim.keymap.set("c", "W", "noa w")
 
 	M.quickfix()
 end
