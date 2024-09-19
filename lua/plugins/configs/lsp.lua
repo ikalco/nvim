@@ -22,10 +22,4 @@ M.clangd = {
 	}
 }
 
-for lsp_name, opts in pairs(M) do
-	M[lsp_name] = function()
-		require("lspconfig")[lsp_name].setup(opts)
-	end
-end
-
 return M

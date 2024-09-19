@@ -5,11 +5,12 @@ local opts = {
 		"lua_ls",
 		"clangd",
 		"ts_ls",
-		"jdtls"
+		"jdtls",
+		"ruby_lsp",
+		"rubocop"
 	},
 	handlers = {
 		lsp.default_setup,
-		lua_ls = require("plugins.configs.lsp").lua_ls
 	}
 }
 

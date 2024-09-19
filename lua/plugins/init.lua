@@ -44,10 +44,14 @@ local plugins = {
 			-- LSP support
 			"neovim/nvim-lspconfig",
 			"williamboman/mason.nvim",
-			"williamboman/mason-lspconfig.nvim",
 
 			-- Autocompletion
-			"hrsh7th/nvim-cmp",
+			{
+				"hrsh7th/nvim-cmp",
+				config = function()
+					require("plugins.configs.nvim_cmp")
+				end
+			},
 			"hrsh7th/cmp-buffer",
 			"hrsh7th/cmp-path",
 			"hrsh7th/cmp-nvim-lua",
@@ -64,6 +68,9 @@ local plugins = {
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
+		dependencies = {
+			"VonHeikemen/lsp-zero.nvim",
+		},
 		config = function()
 			require("plugins.configs.mason_lspconfig")
 		end
