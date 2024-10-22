@@ -22,4 +22,16 @@ M.clangd = {
 	}
 }
 
+M.pylsp = {
+	pylsp = {
+		plugins = {
+			pycodestyle = {
+				enabled = true,
+				maxLineLength = 100
+			},
+			black = { enabled = true }
+		}
+	}
+}
+
 return M

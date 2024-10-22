@@ -7,7 +7,8 @@ local opts = {
 		"ts_ls",
 		"jdtls",
 		"ruby_lsp",
-		"rubocop"
+		"rubocop",
+		"pylsp"
 	},
 	handlers = {
 		lsp.default_setup,
